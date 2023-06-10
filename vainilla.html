@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> menu lateral dinamico </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>   
+
+            <img src="imagenes/vainilla.jpg" width="120" alt="LOGO">
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="vinilla.html">VAINILLA</a></li>
+                <li><a href="tres leches.html">TRES LECHES</a></li>
+                <li><a href="chocolate.html">CHOCOLATE</a></li>
+                <li><a href="fresa.html">FRESA</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>vainilla</h2>
+            <p>"todo lo que necesitas es amor y un pedazo de pastel"</p>
+            <center><img src="imagenes/vainilla.jpg" width="600" alt="fondo"></center>
+             
+           
+                <center><button>Mostrar menu</button></center>
+        </div>
+
+    </section>
+            
+        <!-- JS jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+
+            //Mostrar Sidebar
+            $("button").on('click', function(){
+                $(".container").toggleClass("show");
+            });
+
+            $(".side-hide").on('click', function(){
+                $(".container").toggleClass("show");
+
+            })
+
+        </script>
+    </body>
+</html>
+
